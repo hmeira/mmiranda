@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<title>Contacto</title>
+	<title>Agenda</title>
 	<meta charset="utf-8">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -12,6 +12,10 @@
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/AdminLTE.min.css">
+
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/superfish.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -74,25 +78,73 @@
 
     <div class="container">
           <div class="row">
-        <article class="span8">
-              <h3>Login</h3>
-              <div class="inner-1">
-            	<form action="./users.html" method="post">
-                	<div>
-                    	<input type="text" value="">
-                  		<br>
-                    </div>
-                  	<div>
-                    	<input type="password" value="">
-                    	<br>
-                    </div>
-                	<div> <button class="btn btn-1" type="reset">Clear</button> <button class="btn btn-1" type="submit">Send</button></div>
-                </form>
-          		</div>
-            </article>
-              </div>
-        </div>
-  </div>
+          <h3>Agenda</h3>
+
+           <article class="span10">
+				<!-- The time line -->
+                <ul class="timeline">
+                	<!-- timeline time label -->
+					<li class="time-label">
+					   <span class="bg-red">29 Nov. 2016 </span>
+                   </li>
+                   <!-- timeline item -->
+				   <li>
+				     <i class="fa fa-envelope bg-blue"></i>
+				     <div class="timeline-item">
+				       <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+				       <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
+				       <div class="timeline-body">
+				           Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+				           weebly ning heekya handango imeem plugg dopplr jibjab, movity
+				           jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
+				           quora plaxo ideeli hulu weebly balihoo...
+				       </div>
+				       <div class="timeline-footer">
+				         <a class="btn btn-primary btn-xs">Read more</a>
+				         <a class="btn btn-danger btn-xs">Delete</a>
+				       </div>
+				     </div>
+                   </li>
+                   <!-- timeline item -->
+                   <li>
+				     <i class="fa fa-comments bg-yellow"></i>
+				     <div class="timeline-item">
+				       <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
+				       <h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
+				       <div class="timeline-body">
+				            Take me to your leader!
+				            Switzerland is small and neutral!
+				            We are more like Germany, ambitious and misunderstood!
+				       </div>
+				       <div class="timeline-footer">
+				           <a class="btn btn-warning btn-flat btn-xs">View comment</a>
+				       </div>
+				     </div>
+                   </li>
+                   <!-- timeline time label -->
+				   <li class="time-label">
+				   	   <span class="bg-red">30 Nov. 2016 </span>
+                   </li>
+                   <!-- timeline item -->
+				   <li>
+				     <i class="fa fa-camera bg-purple"></i>
+				     <div class="timeline-item">
+				       <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+				       <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+				       <div class="timeline-body">
+				            <img src="http://placehold.it/150x100" alt="..." class="margin">
+				            Take me to your leader!
+											            Switzerland is small and neutral!
+				            We are more like Germany, ambitious and misunderstood!
+				       </div>
+				     </div>
+                   </li>
+                </ul>
+           </article>
+
+          </div>
+     </div>
+</div>
 
 
 <!--============================== footer =================================-->
