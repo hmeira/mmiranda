@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/superfish.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -82,21 +83,43 @@
     </header>
 <div class="bg-content">
   <!--============================== content =================================-->
-   <div id="content"><div class="ic">More Website Templates @ TemplateMonster.com. November19, 2012!</div>
+   <div id="content">
     <div class="container">
           <div class="row">
         <article class="span8">
          <div class="inner-1">
           <ul class="list-blog">
+
             <li>
             <h3>Duis autem vel eum iriure dolor</h3>
             <time datetime="2012-11-09" class="date-1">9.11.2012</time>
             <div class="name-author">Por <a href="#">Michelle Miranda</a></div>
-            <a href="#" class="comments">11 comments</a>
+            <a href="#myModal" class="comments" data-toggle="modal"><i class="fa fa-comments"></i> 1 comentarios</a>
             <div class="clear"></div>
-              <img alt="" src="img/page4-img1.jpg">
+              <img alt="" height="342" width="740" src="img/page4-img1.jpg">
               <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum delenit augue duis dolore te feugait nulla facilisi.</p>
-              <a href="#" class="btn btn-1">Read More</a>
+              <a href="blog.html" class="btn btn-1">Ver Ensayo</a>
+              <div class="modal hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			    <div class="modal-header">
+			      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			      <h3>Comentarios</h3>
+			    </div>
+			    <div class="modal-body">
+			      <blockquote>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+				    <small>Someone famous <cite title="Source Title">Michelle Miranda</cite></small>
+                    </blockquote>
+                    <hr>
+                    <blockquote>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+					  <small>Someone famous <cite title="Source Title">Oscar Alho</cite></small>
+                    </blockquote>
+			    </div>
+			    <div class="modal-footer">
+			      <input class="input-xxlarge" type="text" value="Inserta tu comentario"> <br>
+			      <a href="#" class="btn btn-primary">Insertar</a>
+			    </div>
+            </div>
             </li>
 
             <li>
@@ -114,42 +137,40 @@
           </div>
         </article>
         <article class="span4">
-          <h3 class="extra">Search</h3>
+          <h3 class="extra">Búsqueda</h3>
           <form id="search" action="search.php" method="GET" accept-charset="utf-8" >
             <div class="clearfix">
               <input type="text" name="s" onBlur="if(this.value=='') this.value=''" onFocus="if(this.value =='' ) this.value=''" >
-              <a href="#" onClick="document.getElementById('search').submit()" class="btn btn-1">Search</a> </div>
+              <a href="#" onClick="document.getElementById('search').submit()" class="btn btn-1">Buscar</a> </div>
           </form>
-          <h3>Categories</h3>
+          <h3>Categorias</h3>
           <ul class="list extra extra1">
-            <li><a href="#">Ut wisi enim ad minim veniam</a></li>
-            <li><a href="#">Quis nostrud exerci tation ullamcorper</a></li>
-            <li><a href="#">Suscipit lobortis nisl ut aliquip</a></li>
-            <li><a href="#">Commodo consequat</a></li>
-            <li><a href="#">Duis autem vel eum iriure dolor in hendrerit</a></li>
-            <li><a href="#">Vulputate velit esse molestie consequat</a></li>
-            <li><a href="#">Fel illum dolore eu feugiat nulla</a></li>
-            <li><a href="#">Facilisis at vero eros et accumsan iusto</a></li>
-            <li><a href="#">Odio dignissim qui blandit</a></li>
-            <li><a href="#">Praesent luptatum zzril delenit augue</a></li>
+            <li><a href="#">Campañas</a></li>
+            <li><a href="#">Retratos</a></li>
+            <li><a href="#">Moda</a></li>
+            <li><a href="#">Fiestas</a></li>
+            <li><a href="#">Publicidad</a></li>
+            <li><a href="#">Estilo de vida</a></li>
+            <li><a href="#">Historia de amor</a></li>
+            <li><a href="#">Paisajes</a></li>
       </ul>
-          <h3>Archive</h3>
+          <h3>Archivo</h3>
          <div class="wrapper">
           <ul class="list extra2 list-pad ">
-            <li><a href="#">November 2012</a></li>
-            <li><a href="#">October 2012</a></li>
-            <li><a href="#">September 2012</a></li>
-            <li><a href="#">August 2012</a></li>
-            <li><a href="#">July 2012</a></li>
-            <li><a href="#">June 2012</a></li>
+            <li><a href="#">November 2016</a></li>
+            <li><a href="#">October 2016</a></li>
+            <li><a href="#">September 2016</a></li>
+            <li><a href="#">August 2016</a></li>
+            <li><a href="#">July 2016</a></li>
+            <li><a href="#">June 2016</a></li>
           </ul>
             <ul class="list extra2">
-            <li><a href="#">May 2012</a></li>
-            <li><a href="#">April 2012</a></li>
-            <li><a href="#">March 2012</a></li>
-            <li><a href="#">February 2012</a></li>
-            <li><a href="#">January 2012</a></li>
-            <li><a href="#">December 2011</a></li>
+            <li><a href="#">May 2016</a></li>
+            <li><a href="#">April 2016</a></li>
+            <li><a href="#">March 2016</a></li>
+            <li><a href="#">February 2016</a></li>
+            <li><a href="#">January 2016</a></li>
+            <li><a href="#">December 2015</a></li>
           </ul>
 
           </div>
@@ -169,5 +190,6 @@
       </div>
 </footer>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="asset/js/bootstrap-modal.js"></script>
 </body>
 </html>

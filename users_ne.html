@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<title>Folio</title>
+	<title>AutoServicio</title>
 	<meta charset="utf-8">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -13,10 +13,12 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/superfish.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+	<script src="js/forms.js"></script>
 
 	<script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}	</script>
 	<script>
@@ -30,6 +32,13 @@
   		  });
 
 	</script>
+	<script type="text/javascript">
+	  $(function() {
+	    $('#datetimepicker1').datetimepicker({
+	      language: 'pt-BR'
+	    });
+	  });
+</script>
 
 	<!--[if lt IE 8]>
   		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>
@@ -79,50 +88,65 @@
   </div>
     </header>
 <div class="bg-content">
-  <!--============================== content =================================-->
+      <!--============================== content =================================-->
+
     <div class="container">
           <div class="row">
-           <article class="span12">
-		      <div class="inner-1">
-		        <ul class="list-blog">
-		        <li>
-		          <h3>Ensayo Familia: Oscar Alho</h3>
-		          <time datetime="2016-10-30" class="date-1">30.10.2016</time>
-                  <div class="name-author"> <a href="#">Parque Araucano</a></div>
-		          <div class="clear"></div>
-		          <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum delenit augue duis dolore te feugait nulla facilisi.</p>
-                </li>
-                </ul>
-              </div>
-            </article>
-          </div>
-          <div class="row">
+          <h5 class="text-error">Michelle,</h5> <h6>Bienvenido al área de autoservicio, muchas gracias por su visita.</h6>
            <article class="span8">
-				&nbsp
+
+              <div class="well well-large">
+                <div class="clear"></div>
+				<h3 class="text-warning"> Solicitar nuevo ensayo </h3>
+				   <form id="contact-form">
+				        <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div>
+				        <fieldset>
+				      <div>
+				          <label class="name">
+				          <input type="text" value="Su nombre">
+				          <br>
+				          <span class="error">*Este no es un nombre válido.</span> <span class="empty">*Este campo es requerido.</span> </label>
+				          </div>
+				      <div>
+				          <label class="phone">
+				          <input type="tel" value="Teléfono">
+				          <br>
+				          <span class="error">*Este no es un numero válido.</span> <span class="empty">*Este campo es requerido.</span> </label>
+				          </div>
+				      <div>
+				          <label class="email">
+				          <input type="text" value="E-mail">
+				          <br>
+				          <span class="error">*Este no es un email válido.</span> <span class="empty">*Este campo es requerido.</span> </label>
+				          </div>
+					  <div id="datetimepicker1" class="input-append date">
+					  	  <label class="fecha">
+					  	  <input data-format="dd/MM/yyyy" type="text"></input> <span class="add-on"><i class="fa fa-calendar-plus-o"></i></span>
+					  	  <br>
+					  	  <span class="error">*Este no es una fecha válida.</span> <span class="empty">*Este campo es requerido.</span> </label>
+				          </div>
+				      <div>
+				          <label class="message">
+				          <textarea>Message</textarea>
+				          <br>
+				          <span class="error">*El mensaje es demasiado corto.</span> <span class="empty">*Este campo es requerido.</span> </label>
+				          </div>
+				      <div class="buttons-wrapper"> <a class="btn btn-1" data-type="reset">Apagar</a> <a class="btn btn-1" data-type="submit">Enviar</a></div>
+				    </fieldset>
+                   </form>
+              </div>
            </article>
-           <div class="clear"></div>
-            <ul class="portfolio clearfix">
-             <li class="box"><a href="img/portfolio/1/photo1.jpg" class="magnifier"><img height="180" width="270" src="img/portfolio/1/photo1.jpg" alt=""></a></li>
-			 <li class="box"><a href="img/portfolio/1/photo2.jpg" class="magnifier"><img height="180" width="270" src="img/portfolio/1/photo2.jpg" alt=""></a></li>
-			 <li class="box"><a href="img/portfolio/1/photo3.jpg" class="magnifier"><img height="180" width="270" src="img/portfolio/1/photo3.jpg" alt=""></a></li>
-			 <li class="box"><a href="img/portfolio/1/photo4.jpg" class="magnifier"><img height="180" width="270" src="img/portfolio/1/photo4.jpg" alt=""></a></li>
-             <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/page3-img5.jpg"></a></li>
-             <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/page3-img6.jpg"></a></li>
-             <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/page3-img7.jpg"></a></li>
-             <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/page3-img8.jpg"></a></li>
-             <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/page3-img9.jpg"></a></li>
-             <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/page3-img10.jpg"></a></li>
-             <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/page3-img11.jpg"></a></li>
-             <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/page3-img12.jpg"></a></li>
-             <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/page3-img13.jpg"></a></li>
-             <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/page3-img14.jpg"></a></li>
-             <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/page3-img15.jpg"></a></li>
-             <li class="box"><a href="img/image-blank.png" class="magnifier" ><img alt="" src="img/page3-img16.jpg"></a></li>
-            </ul>
-           </div>
+           <article class="span4">
+                <ul class="nav nav-list">
+				  <li><a href="users.html"><i class="fa fa-home"></i> Home</a></li>
+				  <li><a href="users_er.html"> &nbsp<i class="fa fa-book"></i> Ensayos realizados</a></li>
+				  <li class="active"><a href="users_ne.html"> &nbsp<i class="fa fa-pencil"></i> Nuevos Ensayos</a></li>
+				</ul>
+           </article>
           </div>
-    </div>
-</div>
+     </div>
+ </div>
+
 
 <!--============================== footer =================================-->
 <footer>
@@ -134,5 +158,7 @@
       </div>
 </footer>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+
 </body>
 </html>
